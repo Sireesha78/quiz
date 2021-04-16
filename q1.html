@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+    <title>Q-1</title>
+    <script>
+        function register() {
+            var getSelectedValue = document.querySelector('input[name="ans"]:checked');
+            if (getSelectedValue != null) {
+                var cr = localStorage.getItem("correct");
+                var wr = localStorage.getItem("total");
+                var c = Number(cr);
+                var w = Number(wr);
+                var a = document.getElementById("red").checked;
+                if (a) {
+                    c++;
+                    w++;
+                }
+                else {
+                    w++;
+                }
+                if (localStorage) {
+                    localStorage.setItem("correct", c);
+                    localStorage.setItem("total", w);
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1><center>Question: 1</center></h1><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 border border-dark border-6" style="background-color: #f7bdb3;">
+                <h1>What is the color of an Apple?</h1>
+
+                <form action="q2.html" style="font-size: 30px;">
+                    
+                    <input type="radio" name="ans" id="yellow" value="yellow" required><label for="yellow">yellow</label><br>
+                    
+                    <input type="radio" name="ans" id="white" value="white"><label for="white">white</label><br>
+                    
+                    <input type="radio" name="ans" id="red" value="red"><label for="red">red</label><br>
+                    <center><input type="submit" value="Submit" onclick="register()"></center>
+                </form>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script> -->
+
+
+</body>
+
+</html>

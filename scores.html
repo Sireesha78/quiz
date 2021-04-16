@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+    <title>Score</title>
+    <script>
+        function register() {
+            if (localStorage) {
+                var y = localStorage.getItem("id");
+                var x = localStorage.getItem("name");
+                var z = localStorage.getItem("correct");
+                var t = localStorage.getItem("total");
+                var w = Number(t);
+                var c = Number(z);
+                var percen = (c / w) * 100;
+                var myTable =
+                    '<div class="container">' +
+                    '<div class="row">' +
+                    '<div class="col-sm-3"></div>' +
+                    '<div class="col-sm-6">' +
+                    '<center>' +
+                    '<table class="table border border-dark border-4 table-bordered">' +
+                    '<tr bgcolor= #f7bdb3 >' +
+                    '<td  align="center"><font face="helvetica"><b>Name </b></font></td>' +
+                    // '<td  align="center"><font face="helvetica"><b>id: ' + y + '</b></font></td>' +
+                    '<td  align="center"><font face="helvetica"><b>'+ x + '</b></font></td>' +
+                    '</tr>' +
+                    '<tr bgcolor= #f7bdb3>' +
+                    '<td  align="center"><font face="helvetica"><b>Correct</b></font></td>' +
+                    '<td  align="center"><font face="helvetica"><b>' + c + '</b></font></td>' +
+                    '</tr>' +
+                    '<tr bgcolor= #f7bdb3>' +
+                    '<td  align="center"><font face="helvetica"><b>Questions</b></font></td>' +
+                    '<td  align="center"><font face="helvetica"><b>' + w + '</b></font></td>' +
+                    '</tr>' +
+                    
+                    // '<tr bgcolor= #f7bdb3>' +
+                    // '<td  align="center"><font face="helvetica"><b>Not Attempted</b></font></td>' +
+                    // '<td  align="center"><font face="helvetica"><b>' + 0 + '</b></font></td>' +
+                    // '</tr>' +
+                    // '<tr bgcolor= #f7bdb3>' +
+                    // '<td  align="center"><font face="helvetica"><b>Wrong</b></font></td>' +
+                    // '<td  align="center"><font face="helvetica"><b>' + wrng + '</b></font></td>' +
+                    // '</tr>' +
+                    '<tr bgcolor= #f7bdb3>' +
+                    '<td  align="center"><font face="helvetica"><b>Percentage</b></font></td>' +
+                    '<td  align="center"><font face="helvetica"><b>' + percen + '%</b></font></td>' +
+                    '</tr>' +
+                    '</table>' +
+                    '</center>'+'</div>'+'<div class="col-sm-3"></div>' +'</div>'+'</div>';
+                document.writeln("<h1><center>SCORE</center><h1>")
+                document.writeln(myTable);
+            }
+        }
+        register();
+
+    </script>
+</head>
+
+<body>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script> -->
+
+
+</body>
+
+</html>

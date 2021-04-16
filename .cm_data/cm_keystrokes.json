@@ -1,0 +1,25 @@
+{
+    "quiz.html": [
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Fri Apr 16 2021 08:48:37",
+            "keyStrokeInfo": "",
+            "position": "9,5"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 0,
+            "keyStrokeTimeStamp": "Fri Apr 16 2021 08:48:37",
+            "keyStrokeInfo": "",
+            "position": "9,1"
+        },
+        {
+            "operation": "DELETE",
+            "lines": 1,
+            "keyStrokeTimeStamp": "Fri Apr 16 2021 08:48:38",
+            "keyStrokeInfo": "",
+            "position": "8,107"
+        }
+    ]
+}
